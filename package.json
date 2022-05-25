@@ -1,0 +1,31 @@
+{
+  "name": "lsl-bridge",
+  "version": "0.0.1",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "build": "tsc",
+    "predev": "",
+    "dev": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "@types/node": "^17.0.35",
+    "aedes": "^0.47.0",
+    "express": "^4.18.1",
+    "node-red": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.5.2"
+  }
+}

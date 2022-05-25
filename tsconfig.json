@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "baseUrl": "./"
+  },
+  "lib": ["es2021", "ESNext.String"],
+  "exclude": ["node_modules", "tests"],
+  "include": [ "src/**/*"]
+}
