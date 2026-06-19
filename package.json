@@ -1,6 +1,6 @@
 {
-  "name": "lsl-bridge",
-  "version": "0.0.1",
+  "name": "aedes-nodered-server-ts",
+  "version": "0.0.2",
   "main": "dist/server.js",
   "scripts": {
     "start": "node ./dist/server.js",
@@ -8,24 +8,21 @@
     "predev": "",
     "dev": "nodemon"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "keywords": [],
   "description": "",
-  "dependencies": {
-    "@types/node": "^17.0.35",
-    "aedes": "^0.47.0",
-    "express": "^4.18.1",
-    "node-red": "^2.2.2"
-  },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.8.0",
-    "typescript": "^4.5.2"
+    "eslint": "^8.57.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@types/node": "^26.0.0",
+    "aedes": "^1.0.2",
+    "express": "^5.2.1",
+    "node-red": "^5.0.0"
   }
 }
