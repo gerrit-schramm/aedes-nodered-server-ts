@@ -1,13 +1,15 @@
-const aedes = require('aedes')()
-const mqttServer = require('net').createServer(aedes.handle)
+import { createServer } from 'node:net'
+import { Aedes } from 'aedes'
+import express from 'express'
+import http from 'http'
+import red from 'node-red'
+
+const aedes = await Aedes.createBroker()
+const mqttServer = createServer(aedes.handle)
 
 mqttServer.listen(1883, () => {
     console.log('MQTT server started.')
 })
-
-const http = require('http')
-const express = require("express")
-const red = require("node-red")
 
 const app = express()
 
